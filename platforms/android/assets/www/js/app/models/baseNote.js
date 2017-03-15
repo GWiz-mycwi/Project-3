@@ -139,7 +139,7 @@ define( [ "yasmf" ], function( _y ) {
      * The visible status of the note. Read-write with setStatus and
      * getStatus; the property is status.
      */
-    self._status = "";
+    self._status = "New";
     self.getStatus = function() {
       return self._status;
     };
