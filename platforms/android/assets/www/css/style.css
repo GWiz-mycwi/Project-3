@@ -229,6 +229,7 @@ body.android {
   line-height: 20px;
   font-weight: 200;
   margin: auto;
+  width: 50%;
   /*margin-right: 35px;
   margin-left: 60px; */
   padding: 10px;
