@@ -230,7 +230,7 @@ body.android {
   font-weight: 200;
   margin-right: 35px;
   margin-left: 60px;
-  padding: 20px, 20px, 20px, 20px;
+  padding: 10px, 10px, 10px, 60px;
 }
 .noteListView .ui-list-item:active .note-status {
   color: #FFFFFF;
