@@ -21,6 +21,16 @@
  * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
  * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
+ * 
+ * Project 3     Anthony Fernandez     baseNote.js       10Mar2017
+ *
+ * Modifications Log:
+ *    NAME        DATE            DESCRIPTION
+ * 1. Anthony     10Mar2017       Mod lines 68 Added Register statusChanged notification
+ * 2. Anthony     10Mar2017       Mod lines 136-153 Added status Message
+ * 3. Anthony     10Mar2017       Mod lines 256 Add status to JSON
+ * 4. Anthony     15Mar2017       Mod lines 25-32 Added Modifications log
+ * 
  */
 /*jshint
          asi:true,
