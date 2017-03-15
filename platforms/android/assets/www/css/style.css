@@ -227,11 +227,10 @@ body.android {
 .noteListView .ui-list-item .note-status {
   font-size: 20px;
   line-height: 20px;
-  font-weight: 200;
-  margin: auto;
+  font-weight: 200;  
   width: 50%;
-  /*margin-right: 35px;
-  margin-left: 60px; */
+  margin-right: 35px;
+  margin-left: 60px;
   padding: 10px;
 }
 .noteListView .ui-list-item:active .note-status {
