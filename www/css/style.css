@@ -225,13 +225,12 @@ body.android {
 /* position and style the status of the note */             /*CSS Change 1 Start 10Mar17 AMF */
 
 .noteListView .ui-list-item .note-status {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
-  font-weight: 200;  
-  width: 50%;
-  margin-right: 25px;
-  margin-left: 60px;
-  padding: 10px;
+  font-weight: 300;
+  color: rgba(87, 52, 32, 0.5);
+  float: right;
+  padding-left: 10px;
 }
 .noteListView .ui-list-item:active .note-status {
   color: #FFFFFF;

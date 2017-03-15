@@ -30,6 +30,7 @@
  * 2. Anthony     10Mar2017       Mod lines 136-153 Added status Message
  * 3. Anthony     10Mar2017       Mod lines 256 Add status to JSON
  * 4. Anthony     15Mar2017       Mod lines 25-32 Added Modifications log
+ * 5. Anthony     15Mar2017       Mod lines 285 Added deserilizes the JSON String Status passed in
  * 
  */
 /*jshint
@@ -138,7 +139,7 @@ define( [ "yasmf" ], function( _y ) {
      * The visible status of the note. Read-write with setStatus and
      * getStatus; the property is status.
      */
-    self._status = "Archive";
+    self._status = "";
     self.getStatus = function() {
       return self._status;
     };
@@ -146,7 +147,7 @@ define( [ "yasmf" ], function( _y ) {
       self._status = theStatus;
       self.notify( "statusChanged" );
     };
-    Object.defineProperty( self, "status", {
+    Object.defineProperty( self, "Status", {
       get: self.getStatus,
       set: self.setStatus,
       configurable: true
@@ -253,7 +254,7 @@ define( [ "yasmf" ], function( _y ) {
         "uid": self.uid,
         "createdDate": self.createdDate,
         "modifiedDate": self.modifiedDate,
-        "status": self.Status,                /** Add status to JSON Change 1 10mar17 AMF */
+        "Status": self.Status,                /** Add status to JSON Change 1 10mar17 AMF */
         "name": self.name,
         "textContents": self.textContents,
         "mediaContents": self.mediaContents,
@@ -282,6 +283,7 @@ define( [ "yasmf" ], function( _y ) {
         self.unitValue = aNote.unitValue; // so we don't have to recalc it
         // but assign this one last so we have the proper modification date
         self._modifiedDate = new Date( aNote.modifiedDate );
+        self.Status = aNote.Status;                              //Added deserilizes the JSON String Status passed in
         return true;
       } catch ( e ) {
         return false;
