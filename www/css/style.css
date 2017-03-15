@@ -19,6 +19,11 @@
  * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
  * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * Modifications Log:
+ *    NAME        DATE            DESCRIPTION
+ * 1. Anthony     10Mar2017       Mod lines 222-238 font-size, padding, .android:color
+ * 2. Anthony     15Mar2017       Mod lines 23-26 added Modifications log 
  */
 
 /* General styles */
@@ -218,12 +223,12 @@ body.android {
 /* position and style the status of the note */             /*CSS Change 1 Start 10Mar17 AMF */
 
 .noteListView .ui-list-item .note-status {
-  font-size: 10px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 200;
   margin-right: 35px;
   margin-left: 60px;
-  padding: 10px, 10px, 10px, 10px;
+  padding: 20px, 20px, 20px, 20px;
 }
 .noteListView .ui-list-item:active .note-status {
   color: #FFFFFF;
