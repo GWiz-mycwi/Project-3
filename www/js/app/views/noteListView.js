@@ -21,6 +21,14 @@
  * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
  * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
+ * 
+ *  Project 3     Anthony Fernandez     noteListView.js       10Mar2017
+ *
+ *  Modifications Log:
+ *    NAME        DATE            DESCRIPTION
+ * 1. Anthony     10Mar2017       Mod lines 212 Add status property 
+ * 2. Anthony     15Mar2017       Mod lines 25-30 Added Modifications log
+ * 
  */
 /*jshint
  asi:true,
