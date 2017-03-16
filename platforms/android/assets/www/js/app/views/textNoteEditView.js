@@ -75,7 +75,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton",
       self._note.name = self._nameEditor.innerText;
       self._note.textContents = self._contentsEditor.value;
         var testing = ((document.getElementById("changeStatus")).options[(document.getElementById("changeStatus")).selectedIndex].value).toString();
-	      if ( testing != "null"){ 
+	      if ( testing != ""){ 
 		      self._note.setStatus(testing); 
         };
       noteStorageSingleton.saveNote( self._note );
