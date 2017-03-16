@@ -21,6 +21,14 @@
  * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
  * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
+ * 
+ * *  Project 3     Anthony Fernandez     textNoteEditView.js       16Mar2017
+ *
+ *  Modifications Log:
+ *    NAME        DATE            DESCRIPTION
+ * 1. Anthony     16Mar2017       Mod lines 25-30 Added Modification log 
+ * 2. Anthony     16Mar2017       Mod lines 78-80 Added save the status change
+ * 
  */
 /*jshint
          asi:true,
@@ -66,6 +74,10 @@ define( [ "yasmf", "app/models/noteStorageSingleton",
     self.saveNote = function() {
       self._note.name = self._nameEditor.innerText;
       self._note.textContents = self._contentsEditor.value;
+        var testing = ((document.getElementById("changeStatus")).options[(document.getElementById("changeStatus")).selectedIndex].value).toString(); // save the status change JTKitz 3/15/2017
+	      if ( testing != "null"){ 
+		      self._note.setStatus(testing); 
+        };
       noteStorageSingleton.saveNote( self._note );
     };
     /**
