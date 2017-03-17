@@ -31,6 +31,7 @@
  * 3. Anthony     10Mar2017       Mod lines 256 Add status to JSON
  * 4. Anthony     15Mar2017       Mod lines 25-32 Added Modifications log
  * 5. Anthony     15Mar2017       Mod lines 285 Added deserilizes the JSON String Status passed in
+ * 6. Anthony     17Mar2017       Mod lines 151 Modified Status to status
  * 
  */
 /*jshint
@@ -147,7 +148,7 @@ define( [ "yasmf" ], function( _y ) {
       self._status = theStatus;
       self.notify( "statusChanged" );
     };
-    Object.defineProperty( self, "Status", {
+    Object.defineProperty( self, "status", {
       get: self.getStatus,
       set: self.setStatus,
       configurable: true

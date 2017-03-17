@@ -28,6 +28,7 @@
  *    NAME        DATE            DESCRIPTION
  * 1. Anthony     10Mar2017       Mod lines 212 Add status property 
  * 2. Anthony     15Mar2017       Mod lines 25-30 Added Modifications log
+ * 3. Anthony     17Mar2017       Mod lines 212 Changed ._status to .status
  * 
  */
 /*jshint
@@ -208,7 +209,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton", "text!html/noteListView.ht
               "NAME": notes[ note ].name,              
               "REPRESENTATION": notes[ note ].representation,
               "MODIFIED": _y.D( notes[ note ].modifiedDate, "D" ),
-              "STATUS": notes[ note ]._status,                         // Add status property Change 1 10Mar17 AMF
+              "STATUS": notes[ note ].status,                         // Add status property 17Mar17 AMF
               "INFO": "" + _y.N( notes[ note ].formattedUnitValue )
             } );
             // attach any event handlers
